@@ -8,7 +8,7 @@ from .models import Epi
 # Create your views here.
 def epi(request):
 	epi=Epi.objects.all()
-	context = {"Epi":epi}
+	context = {"epi":epi}
 	template = "epi.html"
 	return render(request, template, context)
 '''

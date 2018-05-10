@@ -1,6 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 from producto import views as p
+from epidemiology import views as epi
 #from cliente import views as c
 #from checkout import views as ch
 #from epidemiology import views as epi
@@ -13,6 +14,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^cv_en/', p.cv_en, name="cv_en"),
     url(r'^moste/', admin.site.urls),
+    url(r'^epi/', epi),
     #url(r'^cliente/', c.cliente, name="cliente"),
     #url(r'^acerca/', c.acerca, name="acerca"),
    # url(r'^app/\?app=.*', p.app, name="app"),
